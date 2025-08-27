@@ -8,8 +8,8 @@ echo "🦀 开始构建 Rust WebAssembly 项目..."
 if ! command -v wasm-pack &> /dev/null; then
     echo "❌ wasm-pack 未安装"
     echo "📦 正在安装 wasm-pack..."
-    curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
-    
+    cargo install wasm-pack
+
     if [ $? -eq 0 ]; then
         echo "✅ wasm-pack 安装成功!"
     else
