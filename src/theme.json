@@ -1,0 +1,91 @@
+{
+  "cssVar": true,
+  "hashed": false,
+  "token": {
+    "colorPrimary": "rgba(58, 173, 235, 0.25)",
+    "colorBgContainer": "#37586c",
+    "colorBgBase": "#37586c",
+    "colorTextBase": "white",
+    "fontSize": 16,
+    "collapsedIconSize": 18,
+    "colorPrimaryActive": "rgba(58, 173, 235, 0.3)"
+  },
+  "components": {
+    "Card": {
+      "headerBg": "rgba(255, 255, 255, 0.1)"
+    },
+    "Button": {
+      "defaultActiveBorderColor": "transparent",
+      "defaultBorderColor": "transparent",
+      "defaultHoverBorderColor": "transparent",
+      "defaultBg": "rgba(0, 0, 0, 0.25)",
+      "defaultHoverBg": "rgba(0, 0, 0, 0.1)",
+      "defaultActiveBg": "rgba(0, 0, 0, 0.1)",
+      "defaultHoverColor": "white",
+      "defaultColor": "white",
+      "defaultActiveColor": "rgba(255, 255, 255, 0.5)",
+      "dangerShadow": "none",
+      "primaryShadow": "none"
+    },
+    "Table": {
+      "headerBg": "#517888",
+      "borderColor": "rgba(255, 255, 255, 0.07)",
+      "colorBgContainer": "#416375",
+      "filterDropdownBg": "#365965",
+      "rowHoverBg": "",
+      "rowSelectedBg": "",
+      "rowSelectedHoverBg": ""
+    },
+    "Slider": {
+      "handleSizeHover": 20,
+      "railHoverBg": "rgba(217, 217, 217, 0.1)",
+      "handleLineWidthHover": 1.5,
+      "trackHoverBg": "white",
+      "controlSize": 20,
+      "handleLineWidth": 1.5,
+      "handleSize": 20,
+      "railSize": 10,
+      "railBg": "rgba(217, 217, 217, 0.1)",
+      "trackBg": "white",
+      "handleColor": "white",
+      "handleActiveColor": "white"
+    },
+    "Select": {
+      "activeOutlineColor": "transparent",
+      "hoverBorderColor": "transparent",
+      "optionSelectedBg": "rgba(0, 0, 0, 0.1)",
+      "optionSelectedColor": "white",
+      "selectorBg": "rgba(0, 0, 0, 0.5)"
+    },
+    "Splitter": {
+      "splitBarSize": 20,
+      "splitBarDraggableSize": 0,
+      "splitTriggerSize": 20
+    },
+    "Segmented": {
+      "itemActiveBg": "rgba(0, 0, 0, 0.1)",
+      "itemColor": "white",
+      "itemHoverBg": "rgba(0, 0, 0, 0.1)",
+      "itemSelectedBg": "#5c6267",
+      "itemSelectedColor": "white",
+      "trackBg": "rgba(0, 0, 0, 0.3)"
+    },
+    "Carousel": {
+      "dotOffset": -60,
+      "dotHeight": 6,
+      "dotWidth": 11,
+      "dotActiveWidth": 20
+    },
+    "DatePicker": {
+      "colorBgContainer": "#37586c",
+      "colorBgBase": "#37586c",
+      "colorTextBase": "white",
+      "colorText": "white",
+      "colorTextPlaceholder": "rgba(255, 255, 255, 0.5)",
+      "colorTextQuaternary": "rgba(255, 255, 255, 0.5)",
+      "colorTextTertiary": "rgba(255, 255, 255, 0.5)",
+      "controlItemBgActive": "rgba(255, 255, 255, 0.5)",
+      "colorBorder": "rgba(255, 255, 255, 0.2)"
+    }
+  }
+}
