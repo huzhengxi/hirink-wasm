@@ -1,10 +1,10 @@
 // 定义授权时间戳
-pub const AUTH_START_TIMESTAMP: i64 = 1756319435;
+pub const AUTH_START_TIMESTAMP: i64 = 1756320724;
 
 // 1 小时
 const ONE_HOUR: i64 = 60 * 60;
 // 1 天
-const ONE_DAY:i64 = ONE_HOUR * 7;
+const ONE_DAY:i64 = ONE_HOUR * 24;
 
 pub const AUTH_CODE_EXPIRES: i64 = 7 * ONE_DAY ;
 
