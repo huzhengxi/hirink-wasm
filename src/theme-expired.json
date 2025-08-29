@@ -1,0 +1,91 @@
+{
+  "cssVar": true,
+  "hashed": false,
+  "token": {
+    "colorPrimary": "transparent",
+    "colorBgContainer": "transparent",
+    "colorBgBase": "transparent",
+    "colorTextBase": "transparent",
+    "fontSize": 0,
+    "collapsedIconSize": 0,
+    "colorPrimaryActive": "transparent"
+  },
+  "components": {
+    "Card": {
+      "headerBg": "transparent"
+    },
+    "Button": {
+      "defaultActiveBorderColor": "transparent",
+      "defaultBorderColor": "transparent",
+      "defaultHoverBorderColor": "transparent",
+      "defaultBg": "transparent",
+      "defaultHoverBg": "transparent",
+      "defaultActiveBg": "transparent",
+      "defaultHoverColor": "transparent",
+      "defaultColor": "transparent",
+      "defaultActiveColor": "transparent",
+      "dangerShadow": "none",
+      "primaryShadow": "none"
+    },
+    "Table": {
+      "headerBg": "transparent",
+      "borderColor": "transparent",
+      "colorBgContainer": "transparent",
+      "filterDropdownBg": "transparent",
+      "rowHoverBg": "",
+      "rowSelectedBg": "",
+      "rowSelectedHoverBg": ""
+    },
+    "Slider": {
+      "handleSizeHover": 20,
+      "railHoverBg": "transparent",
+      "handleLineWidthHover": 1.5,
+      "trackHoverBg": "transparent",
+      "controlSize": 20,
+      "handleLineWidth": 1.5,
+      "handleSize": 20,
+      "railSize": 10,
+      "railBg": "transparent",
+      "trackBg": "transparent",
+      "handleColor": "transparent",
+      "handleActiveColor": "transparent"
+    },
+    "Select": {
+      "activeOutlineColor": "transparent",
+      "hoverBorderColor": "transparent",
+      "optionSelectedBg": "transparent",
+      "optionSelectedColor": "transparent",
+      "selectorBg": "transparent"
+    },
+    "Splitter": {
+      "splitBarSize": 20,
+      "splitBarDraggableSize": 0,
+      "splitTriggerSize": 20
+    },
+    "Segmented": {
+      "itemActiveBg": "transparent",
+      "itemColor": "transparent",
+      "itemHoverBg": "transparent",
+      "itemSelectedBg": "transparent",
+      "itemSelectedColor": "transparent",
+      "trackBg": "transparent"
+    },
+    "Carousel": {
+      "dotOffset": -200,
+      "dotHeight": 600,
+      "dotWidth": 11,
+      "dotActiveWidth": 20
+    },
+    "DatePicker": {
+      "colorBgContainer": "#37586c",
+      "colorBgBase": "#37586c",
+      "colorTextBase": "transparent",
+      "colorText": "transparent",
+      "colorTextPlaceholder": "rgba(255, 255, 255, 0.5)",
+      "colorTextQuaternary": "rgba(255, 255, 255, 0.5)",
+      "colorTextTertiary": "rgba(255, 255, 255, 0.5)",
+      "controlItemBgActive": "rgba(255, 255, 255, 0.5)",
+      "colorBorder": "rgba(255, 255, 255, 0.2)"
+    }
+  }
+}

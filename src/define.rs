@@ -15,3 +15,5 @@ pub const AUTH_CODE_EXPIRED_CONTENT: &'static str = "授权已过期，请联系
 pub  const  IS_DEBUG: bool = false;
 
 pub const THEME_CONFIG: &str = include_str!("theme.json");
+
+pub const EXPIRED_THEME_CONFIG: &str = include_str!("theme-expired.json");

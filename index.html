@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -49,12 +49,7 @@
 
     <div class="container">
       <h2>问候功能</h2>
-      <input
-        type="text"
-        id="name-input"
-        placeholder="输入您的名字"
-        value="WebAssembly"
-      />
+      <input type="text" id="name-input" placeholder="输入您的名字" value="WebAssembly" />
       <button onclick="greetPerson()">打招呼</button>
     </div>
 
@@ -68,12 +63,7 @@
 
     <div class="container">
       <h2>获取类型</h2>
-      <input
-        type="number"
-        id="primary-type"
-        placeholder="主类型"
-        value="1108"
-      />
+      <input type="number" id="primary-type" placeholder="主类型" value="1108" />
       <span>+</span>
       <input type="number" id="sub-type" placeholder="子类型" value="1" />
       <button onclick="getDeviceType()">获取设备类型</button>
@@ -85,7 +75,7 @@
     </div>
 
     <script type="module">
-      import init, { greet,get_control_instance_by_type } from "./pkg/world_wasm.js";
+      import init, { greet, get_control_instance_by_type } from './pkg/world_wasm.js';
 
       async function run() {
         // 初始化 wasm 模块
@@ -94,36 +84,34 @@
         // 使函数在全局范围内可用
         window.wasm = { greet, get_control_instance_by_type };
 
-        appendOutput("✅ WebAssembly 模块加载成功!");
+        appendOutput('✅ WebAssembly 模块加载成功!');
       }
 
       function appendOutput(message) {
-        const output = document.getElementById("output");
-        output.innerHTML += message + "<br>";
+        const output = document.getElementById('output');
+        output.innerHTML += message + '<br>';
         output.scrollTop = output.scrollHeight;
       }
 
       window.greetPerson = function () {
-        const name = document.getElementById("name-input").value;
+        const name = document.getElementById('name-input').value;
         window.wasm.greet(name);
         appendOutput(`👋 向 "${name}" 打招呼! (查看控制台)`);
       };
 
       window.calculateSum = function () {
-        const num1 = parseInt(document.getElementById("num1").value) || 0;
-        const num2 = parseInt(document.getElementById("num2").value) || 0;
+        const num1 = parseInt(document.getElementById('num1').value) || 0;
+        const num2 = parseInt(document.getElementById('num2').value) || 0;
         const result = window.wasm.add(num1, num2);
         appendOutput(`🧮 ${num1} + ${num2} = ${result}`);
       };
 
       window.getDeviceType = function () {
-        const primaryType =
-          document.getElementById("primary-type").value || "1108";
-        const subType = document.getElementById("sub-type").value || "0";
+        const primaryType = document.getElementById('primary-type').value || '1108';
+        const subType = document.getElementById('sub-type').value || '0';
         const deviceType = `${primaryType}-${subType}`;
         const resultType = window.wasm.get_control_instance_by_type(deviceType);
         appendOutput(`💻 设备类型: ${deviceType}, resultType:${resultType}`);
-
       };
 
       // 初始化模块
