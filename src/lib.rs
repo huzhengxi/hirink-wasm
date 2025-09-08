@@ -55,7 +55,8 @@ fn check_auth_code_expired() -> bool {
         console_log!("diff: {}", diff);
     }
 
-    if diff > 0 {
+    // 如果 diff > 0 或者 diff < -AUTH_CODE_EXPIRES，则说明授权码已过期
+    if diff > 0 || diff < -AUTH_CODE_EXPIRES {
         alert!(AUTH_CODE_EXPIRED_CONTENT)
     }
     return diff < 0;
