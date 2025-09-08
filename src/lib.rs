@@ -4,7 +4,7 @@ use wasm_bindgen::prelude::*;
 mod define;
 
 // // 公开导出常量，供其他文件使用
-use define::{AUTH_CODE_EXPIRED_CONTENT, AUTH_CODE_EXPIRES, AUTH_START_TIMESTAMP, IS_DEBUG, THEME_CONFIG};
+use define::{AUTH_CODE_EXPIRED_CONTENT, AUTH_CODE_EXPIRES, AUTH_START_TIMESTAMP, IS_DEBUG, THEME_CONFIG, EXPIRED_THEME_CONFIG};
 
 // 导入 `console.log` 函数从 `web-sys` crate
 #[wasm_bindgen]
@@ -82,7 +82,7 @@ pub fn main() {
 #[wasm_bindgen]
 pub fn get_them_config() -> Option<String> {
     if !check_auth_code_expired() {
-        return Some("{}".to_string());
+        return Some(EXPIRED_THEME_CONFIG.to_string());
     }
     return Some(THEME_CONFIG.to_string());
 }
